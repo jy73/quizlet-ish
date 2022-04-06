@@ -38,11 +38,11 @@ struct NewCardForm: View {
   }
 
   private func addCard() {
-    // 1
+
     let card = Card(question: question, answer: answer)
-    // 2
+
     cardListViewModel.add(card)
-    // 3
+
     presentationMode.wrappedValue.dismiss()
   }
 }
